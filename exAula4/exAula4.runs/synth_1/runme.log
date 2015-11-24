@@ -1,0 +1,356 @@
+
+*** Running vivado
+    with args -log aula3.vds -m64 -mode batch -messageDb vivado.pb -source aula3.tcl
+
+
+****** Vivado v2014.1 (64-bit)
+  **** SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+  **** IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source aula3.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7vx485tffg1157-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib C:/Users/15.83113-2/exAula4/exAula4.srcs/sources_1/new/aula4ex2.vhd
+# read_xdc C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc
+# set_property used_in_implementation false [get_files C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/15.83113-2/exAula4/exAula4.cache/wt [current_project]
+# set_property parent.project_dir C:/Users/15.83113-2/exAula4 [current_project]
+# synth_design -top aula3 -part xc7vx485tffg1157-1
+Command: synth_design -top aula3 -part xc7vx485tffg1157-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 234.656 ; gain = 98.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aula3' [C:/Users/15.83113-2/exAula4/exAula4.srcs/sources_1/new/aula4ex2.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'aula3' (1#1) [C:/Users/15.83113-2/exAula4/exAula4.srcs/sources_1/new/aula4ex2.vhd:15]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design aula3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design aula3 has unconnected port clk
+WARNING: [Synth 8-3331] design aula3 has unconnected port btnCpuReset
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 268.477 ; gain = 132.449
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/virtex7/virtex7/xc7vx485t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/virtex7/virtex7/xc7vx485t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.1/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/virtex7/virtex7/xc7vx485t/ffg1157/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/virtex7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U9' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U8' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:17]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R7' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:20]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R6' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:23]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R5' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V7' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:29]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:33]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:36]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:39]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:42]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U2' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:44]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T3' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:47]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:51]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:54]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P3' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:56]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P4' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:59]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T8' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:66]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V9' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:69]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R8' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:72]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:76]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:79]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T4' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U7' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:84]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U6' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:87]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V4' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:90]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:94]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:97]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R1' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:99]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:103]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U1' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:105]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R2' is not a valid site or package pin name. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:108]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc:112]
+Finished Parsing XDC File [C:/Users/15.83113-2/exAula4/exAula4.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 615.879 ; gain = 479.852
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 615.879 ; gain = 479.852
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 615.879 ; gain = 479.852
+---------------------------------------------------------------------------------
+
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aula3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design aula3 has unconnected port clk
+WARNING: [Synth 8-3331] design aula3 has unconnected port btnCpuReset
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design aula3 has unconnected port sw[5]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 678.246 ; gain = 542.219
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.750 ; gain = 561.723
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.750 ; gain = 561.723
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.750 ; gain = 561.723
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 697.949 ; gain = 561.922
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 697.949 ; gain = 561.922
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 697.949 ; gain = 561.922
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 697.949 ; gain = 561.922
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT5  |     1|
+|2     |IBUF  |     5|
+|3     |OBUF  |     1|
+|4     |OBUFT |    15|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    22|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 697.949 ; gain = 561.922
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 697.949 ; gain = 561.922
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 41 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 704.609 ; gain = 523.082
+# write_checkpoint aula3.dcp
+# report_utilization -file aula3_utilization_synth.rpt -pb aula3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 704.609 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 09 22:01:03 2015...

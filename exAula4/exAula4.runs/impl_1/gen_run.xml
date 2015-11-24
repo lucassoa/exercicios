@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1447113629">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="aula3_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="aula3_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="aula3_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="aula3.tcl"/>
+  <File Type="OPT-DCP" Name="aula3_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="aula3_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="aula3_placed.dcp"/>
+  <File Type="PLACE-IO" Name="aula3_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="aula3_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="aula3_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="aula3_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="aula3_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="aula3_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="aula3_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="aula3_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="aula3_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="aula3_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="aula3_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="aula3_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="aula3_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="aula3_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="aula3_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="aula3_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="aula3_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="aula3_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="aula3_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="aula3_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="aula3_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="aula3.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="aula3_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="aula3.bit"/>
+  <File Type="BG-BIN" Name="aula3.bin"/>
+  <File Type="BITSTR-MSK" Name="aula3.msk"/>
+  <File Type="BITSTR-RBT" Name="aula3.rbt"/>
+  <File Type="BITSTR-NKY" Name="aula3.nky"/>
+  <File Type="BITSTR-BMM" Name="aula3_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="aula3.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/aula3.sysdef"/>
+  <File Type="BG-BGN" Name="aula3.bgn"/>
+  <File Type="BG-DRC" Name="aula3.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Problemas/io_basico.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="T:/###Lucas/Logica-Programavel/Aulas/Problemas/io_basico.xdc"/>
+        <Attr Name="ImportTime" Val="1447109070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Problemas/io_basico.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

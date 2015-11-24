@@ -1,0 +1,126 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
+| Date         : Mon Nov 23 21:06:19 2015
+| Host         : J309-B1 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Toplevel_control_sets_placed.rpt
+| Design       : Toplevel
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    73 |
+| Minimum Number of register sites lost to control set restrictions |   239 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             396 |          140 |
+| No           | No                    | Yes                    |              40 |           11 |
+| No           | Yes                   | No                     |             191 |           69 |
+| Yes          | No                    | No                     |             229 |           78 |
+| Yes          | No                    | Yes                    |              14 |            7 |
+| Yes          | Yes                   | No                     |             347 |          107 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal         |                                             Enable Signal                                             |                                                 Set/Reset Signal                                                 | Slice Load Count | Bel Load Count |
++------------------------------+-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En | u1/microblaze_0/U0/n_0_MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/continue_from_brk_reg |                1 |              1 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En | u1/microblaze_0/U0/n_0_MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/start_single_step_reg |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/mdm_1/U0/n_0_MDM_Core_I1/Use_Uart.reset_TX_FIFO_reg                                                           |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/mdm_1/U0/n_0_MDM_Core_I1/Use_Uart.reset_RX_FIFO_reg                                                           |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/mdm_1/U0/Ext_JTAG_UPDATE                                                                                      |                1 |              1 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/normal_stop_cmd_rst       |                1 |              1 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/force_stop_cmd_rst        |                1 |              1 |
+| ~u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/CE                                                             | u1/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/D                                                                         |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/OF_PipeRun                                                       | u1/microblaze_0/U0/n_0_Unsigned_Op_i_1                                                                           |                1 |              1 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE |                                                                                                       | u1/mdm_1/U0/n_0_MDM_Core_I1/JTAG_CONTROL_I/Use_UART.execute_i_2                                                  |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/n_0_Area_Debug_Control.dbg_hit[0]_i_1                                              |                                                                                                                  |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Data_Flow_I/MSR_Reg_I/MSR_Rst                                          |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/Exception_Taken                                                             |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/n_0_MSR_I_i_1__0                                                                              |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/n_0_Area_Debug_Control.Using_FPGA.Dbg_Inhibit_EX_FDRSE_i_1                                    |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/n_0_Area_Debug_Control.Using_FPGA.Stop_CPU_FDRSE_i_1                                          |                1 |              1 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/n_0_Area_Debug_Control.Using_FPGA.Stop_Instr_Fetch_FDRSE_i_1                                  |                1 |              1 |
+| ~u1/mdm_1/U0/Ext_JTAG_UPDATE |                                                                                                       | u1/mdm_1/U0/n_0_Insert_Delays[0].LUT_Delay_i_1                                                                   |                1 |              1 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i0                                                   |                                                                                                                  |                1 |              2 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE |                                                                                                       |                                                                                                                  |                2 |              2 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Command_Reg_En | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/command_reg_clear         |                1 |              2 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/mdm_1/U0/n_0_Use_Uart.reset_RX_FIFO_i_1                                                                       |                2 |              3 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/rst_clk_wiz_1_100M/bus_struct_reset[0]                                                                        |                3 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/axi_gpio_LED/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/p_2_out                                                    |                1 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/fifo_Data_Present                                              | u1/mdm_1/U0/n_0_MDM_Core_I1/Use_Uart.reset_TX_FIFO_reg                                                           |                1 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/mdm_1/U0/MDM_Core_I1/RX_Data_Present                                                               | u1/mdm_1/U0/n_0_MDM_Core_I1/Use_Uart.reset_RX_FIFO_reg                                                           |                1 |              4 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/mdm_1/U0/MDM_Core_I1/MDM_SEL                                                                       | u1/mdm_1/U0/n_0_PORT_Selector[3]_i_1                                                                             |                1 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/R                                           |                2 |              4 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En |                                                                                                                  |                2 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/mdm_1/U0/Use_AXI_IPIF.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start                                     | u1/mdm_1/U0/Use_AXI_IPIF.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr                                  |                1 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/axi_gpio_SW/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/p_2_out                                                     |                1 |              4 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/n_0_TDI_Shifter[3]_i_1                                                                    | u1/mdm_1/U0/n_0_PORT_Selector[3]_i_1                                                                             |                1 |              4 |
+| ~u1/mdm_1/U0/Ext_JTAG_UPDATE |                                                                                                       | u1/mdm_1/U0/n_0_PORT_Selector[3]_i_1                                                                             |                1 |              4 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/rst_clk_wiz_1_100M/lpf_int                                                                                    |                3 |              5 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/n_0_count[0]__0_i_1                                                                       |                                                                                                                  |                1 |              6 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/rst_clk_wiz_1_100M/U0/SEQ/seq_cnt_en                                                               | u1/rst_clk_wiz_1_100M/clear                                                                                      |                1 |              6 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/OF_PipeRun                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Decode_I/R                                                             |                3 |              7 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/n_0_tdi_shifter[0]_i_1                                                                    |                                                                                                                  |                2 |              8 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/n_0_Use_UART.tdo_reg[0]_i_1                                                               |                                                                                                                  |                2 |              8 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/Dbg_Shift_31                                                                              |                                                                                                                  |                2 |              8 |
+|  u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/command_10                                                     |                                                                                                                  |                2 |              8 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/mdm_1/U0/n_0_s_axi_rdata_i[7]_i_1                                                                  | u1/mdm_1/U0/Use_AXI_IPIF.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst                                                  |                2 |              8 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/mdm_1/U0/n_0_Addr_Counters[0].XORCY_I_i_2                                                          |                                                                                                                  |                1 |              8 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/mdm_1/U0/n_0_Addr_Counters[0].XORCY_I_i_2__0                                                       |                                                                                                                  |                1 |              8 |
+| ~u1/mdm_1/U0/Ext_JTAG_UPDATE | u1/mdm_1/U0/n_0_command[0]_i_1                                                                        |                                                                                                                  |                2 |              8 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reset                                              |                5 |             13 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/Imm_Instr                                                        | u1/microblaze_0/U0/MicroBlaze_Core_I/sync_reset                                                                  |                4 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0_axi_periph/xbar/s_axi_rvalid[0]                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/sync_reset                                                                  |                5 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/axi_gpio_LED/U0/n_0_Not_Dual.gpio_Data_Out[0]_i_1                                                  | u1/axi_gpio_LED/U0/bus2ip_reset                                                                                  |                5 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/axi_gpio_LED/U0/n_0_Not_Dual.gpio_OE[0]_i_1                                                        | u1/axi_gpio_LED/U0/bus2ip_reset                                                                                  |                4 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/axi_gpio_LED/U0/n_0_s_axi_rdata_i[15]_i_1                                                          | u1/axi_gpio_LED/U0/bus2ip_reset                                                                                  |                4 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/axi_gpio_SW/U0/n_0_Not_Dual.gpio_OE[0]_i_1                                                         | u1/axi_gpio_SW/U0/bus2ip_reset                                                                                   |                6 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/axi_gpio_SW/U0/n_0_s_axi_rdata_i[15]_i_1                                                           | u1/axi_gpio_SW/U0/bus2ip_reset                                                                                   |                4 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/axi_gpio_LED/U0/gpio_core_1/Read_Reg_Rst                                                                      |                5 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/axi_gpio_SW/U0/gpio_core_1/Read_Reg_Rst                                                                       |                6 |             16 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/p_1_in                      |                                                                                                                  |                8 |             17 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/aa_rready                               |                                                                                                                  |                8 |             17 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/axi_gpio_LED/U0/bus2ip_reset                                                                                  |                4 |             22 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/axi_gpio_SW/U0/bus2ip_reset                                                                                   |                5 |             22 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/p_0_in1_in            | u1/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reset                                              |                6 |             23 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   |                                                                                                       | u1/mdm_1/U0/n_0_Config_Reg[30]_i_1                                                                               |                5 |             31 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/OF_PipeRun                                                       |                                                                                                                  |               16 |             32 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/normal_piperun                      |                                                                                                                  |               12 |             32 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/microblaze_0/U0/New_Dbg_Instr_TCK                                                                  |                                                                                                                  |                6 |             32 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/pc_write_I                          | u1/microblaze_0/U0/MicroBlaze_Core_I/sync_reset                                                                  |               10 |             32 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   | u1/mdm_1/U0/Dbg_Capture_0                                                                             |                                                                                                                  |               13 |             46 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Using_Ext_Databus.DAXI_Interface_I1/M_AXI_DP_AWVALID_i1     | u1/microblaze_0/U0/MicroBlaze_Core_I/sync_reset                                                                  |               24 |             55 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/n_0_MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.clean_iReady_MuxCY                  |                                                                                                                  |                9 |             64 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/sync_reset                                                                  |               26 |             72 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/OF_PipeRun                                                       | u1/microblaze_0/U0/MicroBlaze_Core_I/sync_reset                                                                  |               24 |             90 |
+|  u1/mdm_1/U0/Ext_JTAG_DRCK   |                                                                                                       |                                                                                                                  |               30 |             92 |
+|  u1/clk_wiz_1/U0/clk_out1    | u1/microblaze_0/U0/MicroBlaze_Core_I/Area.Data_Flow_I/reg_write_I                                     |                                                                                                                  |               16 |            128 |
+|  u1/clk_wiz_1/U0/clk_out1    |                                                                                                       |                                                                                                                  |              113 |            321 |
++------------------------------+-------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Nov 09 22:00:31 2015
+# Process ID: 2860
+# Log file: C:/Users/15.83113-2/exAula4/exAula4.runs/synth_1/aula3.vds
+# Journal file: C:/Users/15.83113-2/exAula4/exAula4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source aula3.tcl

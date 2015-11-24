@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Nov 23 21:03:29 2015
+# Process ID: 8360
+# Log file: T:/###Lucas/Lucassoaexercicios/uc_basico/uc_basico.runs/synth_1/Toplevel.vds
+# Journal file: T:/###Lucas/Lucassoaexercicios/uc_basico/uc_basico.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Toplevel.tcl
